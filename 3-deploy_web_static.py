@@ -7,7 +7,6 @@ import os.path
 env.hosts = ["34.139.228.214", "34.75.185.97"]
 
 
-
 def do_pack():
     """ Packs the web_static folder. """
     date = datetime.utcnow()
@@ -23,6 +22,7 @@ def do_pack():
     if local("tar -cvzf {} web_static".format(file)).failed is True:
         return None
     return file
+
 
 def do_deploy(archive_path):
     """ Deploys webstatic. """
@@ -46,6 +46,7 @@ def do_deploy(archive_path):
         return (True)
     except Exception:
         return (False)
+
 
 def deploy():
     """ Creates and distributes an archive to web servers. """
