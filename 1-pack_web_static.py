@@ -4,6 +4,7 @@ from fabric.api import local
 from datetime import date, datetime
 import os.path
 
+
 def do_pack():
     """ Packs the web_static folder. """
     date = datetime.utcnow()
