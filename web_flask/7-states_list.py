@@ -62,7 +62,7 @@ def tear_down(self):
 
 
 @app.route('/states_list')
-def html_fetch_states():
+def html_states():
     """Displays html page for states"""
     states_all = [s for s in storage.all("State").values()]
     return render_template('7-states_list.html',
