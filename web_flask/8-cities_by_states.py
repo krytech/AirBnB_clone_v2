@@ -16,7 +16,7 @@ def tear_down(self):
     storage.close()
 
 
-@app.route('/cities_by_state')
+@app.route('/cities_by_states')
 def html_states():
     """Displays html page for states"""
     return render_template('8-cities_by_states.html',
