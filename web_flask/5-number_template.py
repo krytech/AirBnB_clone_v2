@@ -40,7 +40,7 @@ def text_int(n):
 
 
 @app.route('/number_template/<int:n>')
-def html_if_int(n):
+def html_int(n):
     """Displays html page if number template used"""
     return render_template('5-number.html', n=n)
 
